@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:fillViewport="false"
+    android:background="@drawable/a2c_background"
+    android:alpha=".5">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:id="@+id/firstLine"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My weight is : "
+                android:fontFamily="sans-serif-medium"
+                android:id="@+id/weightText"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5" />
+
+            <EditText
+                android:id="@+id/weightInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="150"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:inputType="number"
+                android:layout_alignTop="@+id/weightText"
+                android:layout_toEndOf="@+id/weightText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="lb"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:id="@+id/lb"
+                android:layout_alignTop="@+id/weightInput"
+                android:layout_alignEnd="@+id/hintText2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondLine"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/firstLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I have : "
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:id="@+id/spinnerText" />
+
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:layout_toEndOf="@+id/spinnerText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirdLine"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/secondLine">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="for"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:id="@+id/main1_for" />
+            <EditText
+                android:id="@+id/exerciseInput"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="5"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:inputType="number"
+                android:layout_toEndOf="@+id/main1_for" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:shadowColor="#A1A1A1"
+                android:shadowRadius="5"
+                android:shadowDx="-5"
+                android:text="minutes"
+                android:id="@+id/unit"
+                android:layout_toEndOf="@+id/confirmText" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="confirm"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:shadowColor="#A1A1A1"
+            android:shadowRadius="5"
+            android:shadowDx="-5"
+            android:id="@+id/confirm_Button"
+            android:layout_below="@+id/thirdLine"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:fontFamily="sans-serif-medium"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:shadowColor="#A1A1A1"
+            android:shadowRadius="5"
+            android:shadowDx="-5"
+            android:gravity="center"
+            android:id="@+id/confirmText"
+            android:layout_below="@+id/confirm_Button"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/confirmText"
+            android:id="@+id/exercise1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text1" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image1"
+                android:layout_toEndOf="@+id/Text1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise1"
+            android:id="@+id/exercise2"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text2" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image2"
+                android:layout_toEndOf="@+id/Text2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise2"
+            android:id="@+id/exercise3"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text3" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image3"
+                android:layout_toEndOf="@+id/Text3" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise3"
+            android:id="@+id/exercise4"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text4" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image4"
+                android:layout_toEndOf="@+id/Text4" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise4"
+            android:id="@+id/exercise5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text5" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image5"
+                android:layout_toEndOf="@+id/Text5" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise5"
+            android:id="@+id/exercise6"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text6" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image6"
+                android:layout_toEndOf="@+id/Text6" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise6"
+            android:id="@+id/exercise7"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text7" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image7"
+                android:layout_toEndOf="@+id/Text7" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise7"
+            android:id="@+id/exercise8"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text8" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image8"
+                android:layout_toEndOf="@+id/Text8" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise8"
+            android:id="@+id/exercise9"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text9" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image9"
+                android:layout_toEndOf="@+id/Text9" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise9"
+            android:id="@+id/exercise10"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text10" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image10"
+                android:layout_toEndOf="@+id/Text10" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/exercise10"
+            android:id="@+id/exercise11"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize = "20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:id="@+id/Text11" />
+            <ImageView
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:id="@+id/Image11"
+                android:layout_toEndOf="@+id/Text11" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
