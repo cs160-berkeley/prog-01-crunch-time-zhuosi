@@ -11,7 +11,7 @@ Zhuosi Wang ([zhuosi.wang@berkeley.edu](mailto:zhuosi.wang@berkeley.edu))
 See [calorie burning conversion application ] (https://www.youtube.com/watch?v=oeMW2MQ--AI)
 
 ## Screenshots
-<img src="screenshots/lunch icon.png" height="100" alt="lunch icon"/>
+<img src="screenshots/lunch_icon.png" height="100" alt="lunch_icon"/>
 <img src="screenshots/first tab.png" height="400" alt="first tab"/>
 <img src="screenshots/first tab 2.png" height="400" alt="first tab 2"/>
 <img src="screenshots/second tab.png" height="400" alt="second tab"/>
