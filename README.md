@@ -12,10 +12,10 @@ See [calorie burning conversion application ] (https://www.youtube.com/watch?v=o
 
 ## Screenshots
 <img src="screenshots/lunch_icon.png" height="100" alt="lunch_icon"/>
-<img src="screenshots/first tab.png" height="400" alt="first tab"/>
-<img src="screenshots/first tab 2.png" height="400" alt="first tab 2"/>
-<img src="screenshots/second tab.png" height="400" alt="second tab"/>
-<img src="screenshots/second tab 2.png" height="400" alt="second tab 2"/>
+<img src="screenshots/first_tab.png" height="400" alt="first_tab"/>
+<img src="screenshots/first_tab_2.png" height="400" alt="first_tab_2"/>
+<img src="screenshots/second_tab.png" height="400" alt="second_tab"/>
+<img src="screenshots/second_tab_2.png" height="400" alt="second_tab_2"/>
 <img src="screenshots/rotate.png" height="400" alt="rotate"/>
-<img src="screenshots/toast notification.png" height="400" alt="toast notification"/>
+<img src="screenshots/toast_notification.png" height="400" alt="toast_notification"/>
 
