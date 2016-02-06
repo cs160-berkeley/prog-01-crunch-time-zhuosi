@@ -16,6 +16,6 @@ See [calorie burning conversion application ] (https://www.youtube.com/watch?v=o
 <img src="screenshots/first_tab_2.png" height="400" alt="first_tab_2"/>
 <img src="screenshots/second_tab.png" height="400" alt="second_tab"/>
 <img src="screenshots/second_tab_2.png" height="400" alt="second_tab_2"/>
-<img src="screenshots/rotate.png" height="400" alt="rotate"/>
-<img src="screenshots/toast_notification.png" height="400" alt="toast_notification"/>
+<img src="screenshots/rotate.png" height="200" alt="rotate"/>
+<img src="screenshots/toast_notification.png" height="200" alt="toast_notification"/>
 
